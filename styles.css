@@ -1,0 +1,16 @@
+#gridContainer {
+    display: flex;
+    border: 2px black solid;
+    border-radius: 4px;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.pixelDiv {
+    background-color: lightgrey;
+}
