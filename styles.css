@@ -24,13 +24,13 @@ h1 {
 }
 
 
-#sizeBtns, #tools {
+#sizeBtns, #toolBtns {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#tools {
+#toolBtns {
   flex-grow: 1;
 }
 
@@ -63,7 +63,7 @@ h1 {
 }
 
 .button {
-    width: 130px;
+  width: 130px;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.241);
   border-radius: .25rem;
@@ -84,14 +84,29 @@ h1 {
   touch-action: manipulation;
 }
 
-.button:hover,
-.button:focus {
-  border-color: rgba(0, 0, 0, 0.514);
+.btnSelect {
+  width: 130px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.514);
+  border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  box-sizing: border-box;
   color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  text-decoration: none;
+  transition: all 75ms;
 }
 
 .button:hover {
+  border-color: rgba(0, 0, 0, 0.514);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.85);
   transform: translateY(-1px);
 }
 
@@ -104,3 +119,35 @@ h1 {
 }
 
 
+.rainbow {
+  width: 130px;
+  border: 2px solid white;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.233) 0 4px 12px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  text-decoration: none;
+  transition: all 75ms;
+  background: linear-gradient(60deg,
+    hsl(0, 100%, 50%),
+    hsl(30, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(90, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(150, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(210, 100%, 50%),
+    hsl(240, 100%, 50%),
+    hsl(270, 100%, 50%),
+    hsl(300, 100%, 50%),
+    hsl(330, 100%, 50%),
+    hsl(360, 100%, 50%)
+  );
+}
