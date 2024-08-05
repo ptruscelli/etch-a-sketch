@@ -1,5 +1,18 @@
+@font-face {
+  font-family: 'monaspace';
+  src: url('fonts/MonaspaceNeon-Regular.woff2') format('woff2');
+}
+
 h1 {
     text-align: center;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
 }
 
 #main {
@@ -7,12 +20,39 @@ h1 {
     justify-content: space-between;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  font-size: 18px;
+  font-family: 'monaspace'; 
+  padding: 5px;
+}
+
+.footerLink {
+  color: rgb(60, 60, 60);
+  text-decoration: none;
+  background-color: rgb(244, 244, 244);
+  padding: 10px 13px;
+  border-radius: 8px;
+  transition: all 200ms;
+}
+
+.footerLink:hover {
+  background-color: rgb(38, 34, 72);
+  color: white;
+}
+
 #buttons {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding-right: 50px;
-    gap: 50px;
+    gap: 40px;
 }
 
 #rightSpace {
@@ -45,8 +85,8 @@ h1 {
     flex-shrink: 0;
     box-shadow: 0px 0px 8px 2px lightgrey;
     border-radius: 1px;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     margin: auto;
     flex-wrap: wrap;
 }
@@ -63,7 +103,7 @@ h1 {
 }
 
 .button {
-  width: 130px;
+  width: 110px;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.241);
   border-radius: .25rem;
@@ -71,12 +111,12 @@ h1 {
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
-  min-height: 3rem;
+  min-height: 40px;
   text-decoration: none;
   transition: all 75ms;
   user-select: none;
@@ -85,7 +125,7 @@ h1 {
 }
 
 .btnSelect {
-  width: 130px;
+  width: 110px;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.514);
   border-radius: .25rem;
@@ -93,12 +133,12 @@ h1 {
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
-  min-height: 3rem;
+  min-height: 40px;
   text-decoration: none;
   transition: all 75ms;
 }
@@ -120,19 +160,19 @@ h1 {
 
 
 .rainbow {
-  width: 130px;
+  width: 110px;
   border: 2px solid white;
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.233) 0 4px 12px;
   box-sizing: border-box;
   color: white;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
-  min-height: 3rem;
+  min-height: 40px;
   text-decoration: none;
   transition: all 75ms;
   background: linear-gradient(60deg,

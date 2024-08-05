@@ -30,21 +30,23 @@ function changeTool(event) {
 
 
 function focusBtn (event) {
-    if (event.target.id == "rainbow") {
-        tools.forEach((element) => {
-            element.className = "button";
-        });
-        event.target.className = "rainbow";
-    } else if (event.currentTarget.id == "sizeBtns") {
-        sizes.forEach((element) => {
-            element.className = "button";
-        });
-        event.target.className = "btnSelect";
-    } else if (event.currentTarget.id == "toolBtns") {
-        tools.forEach((element) => {
-            element.className = "button";
-        });
-        event.target.className = "btnSelect";
+    if (event.target.type == "submit") {
+        if (event.target.id == "rainbow") {
+            tools.forEach((element) => {
+                element.className = "button";
+            });
+            event.target.className = "rainbow";
+        } else if (event.currentTarget.id == "sizeBtns") {
+            sizes.forEach((element) => {
+                element.className = "button";
+            });
+            event.target.className = "btnSelect";
+        } else if (event.currentTarget.id == "toolBtns") {
+            tools.forEach((element) => {
+                element.className = "button";
+            });
+            event.target.className = "btnSelect";
+        }
     }
 }
 
